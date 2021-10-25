@@ -152,16 +152,16 @@ function draw() {
       fill("white");
       textSize(20);
       textFont("EB Garamond");
-      text(data.tracks[0].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[0].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[0].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 30
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[0].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[0].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -190,16 +190,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[1].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[1].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[1].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[1].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[1].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -228,16 +228,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[2].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[2].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[2].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[2].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[2].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -266,16 +266,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[3].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[3].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[3].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[3].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[3].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -284,7 +284,7 @@ function draw() {
 
   //TRACK5
   if (mouseX > (width / 12) * 4 && mouseX < (width / 12) * 5) {
-    //TRACK3 plays
+    //TRACK5 plays
     if (track5.isPlaying() == false) {
       track5.loop();
       //DESCRIPTION APPEARS
@@ -304,19 +304,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[4].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[4].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[4].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[4].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 40
+        (windowHeight / 3) * 2.1 + 40
       );
       pop();
     }
@@ -346,19 +346,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[5].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[5].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[5].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[5].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 40
+        (windowHeight / 3) * 2.1 + 40
       );
       pop();
     }
@@ -388,16 +388,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[6].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[6].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[6].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[6].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[6].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -425,16 +425,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[7].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[7].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[7].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[7].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[7].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -463,16 +463,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[8].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[8].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[8].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[8].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[8].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
@@ -501,19 +501,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[9].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[9].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[9].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[9].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 40
+        (windowHeight / 3) * 2.1 + 40
       );
       pop();
     }
@@ -543,16 +543,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[10].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[10].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[10].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[10].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[10].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
