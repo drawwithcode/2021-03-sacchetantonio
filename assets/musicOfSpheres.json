@@ -1,0 +1,89 @@
+{
+  "number": 12,
+  "tracks": [
+    {
+      "name": "🪐",
+      "duration": "0:53",
+      "link": "./assets/tracks/🪐.mp3",
+      "ft": "",
+      "position": 1
+    },
+    {
+      "name": "Higher Power",
+      "duration": "3:27",
+      "link": "./assets/tracks/Higher Power.mp3",
+      "ft": "",
+      "position": 2
+    },
+    {
+      "name": "Humankind",
+      "duration": "4:27",
+      "link": "./assets/tracks/Humankind.mp3",
+      "ft": "",
+      "position": 3
+    },
+    {
+      "name": "✨",
+      "duration": "0:54",
+      "link": "./assets/tracks/✨.mp3",
+      "ft": "",
+      "position": 4
+    },
+    {
+      "name": "Let Somebody Go",
+      "duration": "4:02",
+      "link": "./assets/tracks/Let Somebody Go.mp3",
+      "ft": "Selena Gomez",
+      "position": 5
+    },
+    {
+      "name": "❤️",
+      "duration": "3:09",
+      "link": "./assets/tracks/❤️.mp3",
+      "ft": "We are KING, Jacob Collier",
+      "position": 6
+    },
+    {
+      "name": "People of The Pride",
+      "duration": "3:38",
+      "link": "./assets/tracks/People Of The Pride.mp3",
+      "ft": "",
+      "position": 7
+    },
+    {
+      "name": "Biutyful",
+      "duration": "3:13",
+      "link": "./assets/tracks/Biutyful.mp3",
+      "ft": "",
+      "position": 8
+    },
+    {
+      "name": "🌎",
+      "duration": "0:22",
+      "link": "./assets/tracks/🌎.mp3",
+      "ft": "",
+      "position": 9
+    },
+    {
+      "name": "My Universe",
+      "duration": "3:47",
+      "link": "./assets/tracks/My Universe.mp3",
+      "ft": "BTS",
+      "position": 10
+    },
+    {
+      "name": "♾",
+      "duration": "3:47",
+      "link": "./assets/tracks/♾.mp3",
+      "ft": "",
+      "position": 11
+    },
+    {
+      "name": "Coloratura",
+      "duration": "10:18",
+      "link": "./assets/tracks/Coloratura.mp3",
+      "ft": "",
+      "position": 12
+    }
+  ]
+}
