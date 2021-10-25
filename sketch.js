@@ -629,7 +629,7 @@ function draw() {
   }
 
   //Volume
-  let volume = map(mouseY, 0, windowHeight, 0.2, 0);
+  let volume = map(mouseY, 0, windowHeight, 0.5, 0);
   track1.amp(volume);
   track2.amp(volume);
   track3.amp(volume);
