@@ -580,16 +580,16 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[11].name, windowWidth / 2, (windowHeight / 3) * 2);
+      text(data.tracks[11].name, windowWidth / 2, (windowHeight / 3) * 2.1);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[11].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2 + 20
+        (windowHeight / 3) * 2.1 + 20
       );
       textSize(15);
-      text(data.tracks[11].ft, windowWidth / 2, (windowHeight / 3) * 2 + 40);
+      text(data.tracks[11].ft, windowWidth / 2, (windowHeight / 3) * 2.1 + 40);
       pop();
     }
   } else {
