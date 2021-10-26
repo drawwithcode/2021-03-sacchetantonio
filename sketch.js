@@ -23,6 +23,9 @@ let track10;
 let track11;
 let track12;
 
+//Amplitude analyzer
+let analyzer;
+
 function preload() {
   cover = loadImage("./assets/images/MusicOfTheSpheres.jpeg");
   data = loadJSON("./assets/musicOfSpheres.json");
@@ -128,6 +131,21 @@ function setup() {
     text(position, 0, 0);
     pop();
   }
+
+  //Amplitude analyzer
+  analyzer = new p5.Amplitude();
+  analyzer.setInput(track1);
+  analyzer.setInput(track2);
+  analyzer.setInput(track3);
+  analyzer.setInput(track4);
+  analyzer.setInput(track5);
+  analyzer.setInput(track6);
+  analyzer.setInput(track7);
+  analyzer.setInput(track8);
+  analyzer.setInput(track9);
+  analyzer.setInput(track10);
+  analyzer.setInput(track11);
+  analyzer.setInput(track12);
 }
 
 function draw() {
@@ -304,19 +322,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[4].name, windowWidth / 2, (windowHeight / 3) * 2.1);
+      text(data.tracks[4].name, windowWidth / 2, (windowHeight / 3) * 2.05);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[4].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 20
+        (windowHeight / 3) * 2.05 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[4].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 40
+        (windowHeight / 3) * 2.05 + 40
       );
       pop();
     }
@@ -346,19 +364,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[5].name, windowWidth / 2, (windowHeight / 3) * 2.1);
+      text(data.tracks[5].name, windowWidth / 2, (windowHeight / 3) * 2.05);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[5].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 20
+        (windowHeight / 3) * 2.05 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[5].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 40
+        (windowHeight / 3) * 2.05 + 40
       );
       pop();
     }
@@ -501,19 +519,19 @@ function draw() {
       textSize(20);
       textStyle(BOLD);
       textFont("EB Garamond");
-      text(data.tracks[9].name, windowWidth / 2, (windowHeight / 3) * 2.1);
+      text(data.tracks[9].name, windowWidth / 2, (windowHeight / 3) * 2.05);
       textSize(12);
       textStyle(NORMAL);
       text(
         data.tracks[9].duration,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 20
+        (windowHeight / 3) * 2.05 + 20
       );
       textSize(15);
       text(
         "ft. " + data.tracks[9].ft,
         windowWidth / 2,
-        (windowHeight / 3) * 2.1 + 40
+        (windowHeight / 3) * 2.05 + 40
       );
       pop();
     }
@@ -596,17 +614,6 @@ function draw() {
     track12.pause();
   }
 
-  //Album Cover
-
-  imageMode(CENTER);
-  image(
-    cover,
-    windowWidth / 2,
-    windowHeight / 2 - 75,
-    windowWidth / 4,
-    windowWidth / 4
-  );
-
   //Pause
   push();
   rectMode(LEFT, CENTER);
@@ -642,8 +649,18 @@ function draw() {
   track10.amp(volume);
   track11.amp(volume);
   track12.amp(volume);
+
+  let dimention = 0;
+  dimention = analyzer.getLevel();
+  dimention = map(dimention, 0, 1, windowWidth / 4, windowWidth / 4 + 200);
+
+  //Album Cover
+  push();
+  imageMode(CENTER);
+  image(cover, windowWidth / 2, windowHeight / 2 - 75, dimention, dimention);
+  pop();
 }
 
-function windowResized() {
-  resizeCanvas(windowWidth, windowHeight);
-}
+// function windowResized() {
+//   resizeCanvas(windowWidth, windowHeight);
+// }
